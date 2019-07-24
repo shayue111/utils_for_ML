@@ -44,7 +44,7 @@ if __name__ == '__main__':
     # 在图上显示
     plot_data(features, target)
 
-    for i in [1]:
+    for i in [1, 2, 4, 16]:
         poly_data = get_polynomial_feature(features, i)
         model = LinearRegression()
         model.fit(poly_data, target)
